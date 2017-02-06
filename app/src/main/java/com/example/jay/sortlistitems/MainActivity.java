@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         mAscButton = (Button) findViewById(R.id.asc);
         mDescButton = (Button) findViewById(R.id.desc);
 
-
+/*sort items in ascending order on button click*/
         mAscButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v){
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 mListAdapter.notifyDataSetChanged();
             }
         });
-
+/*sort items in descending order on button click*/
         mDescButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v){
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
+/*extending baseadapter class*/
     class MyAdapter extends BaseAdapter {
 
         @Override
